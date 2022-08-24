@@ -15,3 +15,4 @@ jobs:
     - name: Azure CLI Action
       uses: Azure/cli@v1
       
+      
