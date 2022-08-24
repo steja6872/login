@@ -11,6 +11,6 @@ jobs:
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
     - name: setup job
-      run: .\resource.ps1
+      run: .\AllAzureRes.CSV
 
    
