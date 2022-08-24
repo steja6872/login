@@ -1,1 +1,1 @@
-Get-AzureRMResource
+Export-CSV AllAzureRes.CSV
