@@ -3,7 +3,7 @@ name: AzureLoginSample
 
 jobs:
  build-and-deploy:
-    runs-on: [self-hosted]
+    runs-on: [windows-latest]
     steps:
 
     - name: Log in with Azure
