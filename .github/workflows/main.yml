@@ -11,3 +11,4 @@ jobs:
        credentials: ${{ secrets.AZURE_CREDENTIALS }}
      env: # Or as an environment variable
        credentials: ${{ secrets.AZURE_CREDENTIALS }}
+       
