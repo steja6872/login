@@ -1,11 +1,9 @@
-name: auzure-deployment
+on: [push, pull_request]
 
-on:
-  push:
-    branches: [ main ]
+name: AzureLoginSample
 
 jobs:
-  myjob:
+  build-and-deploy:
     runs-on: self-hosted
     steps:
     - name: Install Azure cli
@@ -21,6 +19,6 @@ jobs:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
     - uses: azure/CLI@v1
       with:
-        azcliversion: 2.0.72
-        inlineScript: |
-                          az account list
+          azcliversion: 2.0.72
+          inlineScript: |
+            az account list
