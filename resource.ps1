@@ -1,1 +1,0 @@
-Export-CSV AllAzureRes.CSV
