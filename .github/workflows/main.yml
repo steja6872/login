@@ -16,6 +16,6 @@ jobs:
       run: az group create -l westus -n Group
     - name: Delete Resource group
       run: |
-            az group delete -n MyResourceGroup
-            az group delete -n Group
+            az group delete -n MyResourceGroup --yes
+            az group delete -n Group --yes
    
