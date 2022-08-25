@@ -12,6 +12,7 @@ jobs:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
     - name: Azure command
       run: az group list
-    
+    - name: Azure create resource group
+      run: az group create
 
    
