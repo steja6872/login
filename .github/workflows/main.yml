@@ -14,5 +14,8 @@ jobs:
       run: az group list
     - name: Azure create resource group
       run: az group create -l westus -n Group
-
+    - name: Delete Resource group
+      run: |
+            az group delete -n MyResourceGroup
+            az group delete -n Group
    
