@@ -13,6 +13,6 @@ jobs:
     - name: Azure command
       run: az group list
     - name: Azure create resource group
-      run: az group create
+      run: az group create -l westus -n Group
 
    
