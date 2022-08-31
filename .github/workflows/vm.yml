@@ -1,9 +1,9 @@
 on: [push, pull_request]
 
-name: AzureLoginSample
+name: AzureLogin_VM
 
 jobs:
- build-and-deploy:
+ build:
     runs-on: [windows-latest]
     steps:
     - uses: actions/checkout@v1
@@ -12,4 +12,6 @@ jobs:
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
     - name: Virtual Machine
-      run: az vm create
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
