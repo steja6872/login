@@ -14,3 +14,4 @@ jobs:
     - name: Virtual Machine
       with:
         creds: ${{ secrets.VIRTUAL_MACHINE }}
+
