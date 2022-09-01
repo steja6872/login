@@ -10,8 +10,6 @@ jobs:
     - name: Log in with Azure
       uses: azure/login@v1
       with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
-    - name: Virtual Machine
-      with:
-        creds: ${{ secrets.VIRTUAL_MACHINE }}
+        login_id: ${{ secrets.AZURE_CREDENTIALS }}
+        vm_id: ${{ secrets.VIRTUAL_MACHINE }}
 
